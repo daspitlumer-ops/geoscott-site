@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Textured Raycaster</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: black;
+    }
+
+    canvas {
+      display: block;
+    }
+
+    /* GUN IMAGE */
+    #gun {
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 400px; /* adjust size */
+      pointer-events: none; /* doesn't block controls */
+      z-index: 10; /* makes sure it's on top */
+    }
+  </style>
+</head>
+<body>
+
+<canvas id="game"></canvas>
+
+<!-- Gun Overlay -->
+<img id="gun" src="gun.png">
+
+<script src="script.js"></script>
+
+</body>
+</html>
